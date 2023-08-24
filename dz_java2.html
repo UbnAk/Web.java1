@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+
+        function bmi(weight, height) {
+            //Индекс массы тела
+            let body_mass_index = weight / ((height / 100) ** 2)
+            return body_mass_index.toFixed(2)
+        }
+
+        let weight_human = parseInt(prompt("Введите Ваш вес в килограммах: "));
+        let height_human = parseInt(prompt("Введите Ваш рост в сантиметрах: "));
+        alert(bmi(weight_human, height_human))
+    </script>
+
+</body>
+
+</html>
